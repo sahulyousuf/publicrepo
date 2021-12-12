@@ -56,7 +56,7 @@ while IFS= read -r line; do
 "db_instance": "'${db_instance}'",
 "db_blackout": "'${db_blackout}'" }'
         echo -e "\nPushing blackout metrics for $db_instance to ES"
-        curl -sS -u $ELASTICUSERNAME:$ELASTICPASSWORD -X POST "https://hb-cdlshared-monitoring-rest.$ELASTICENV.cdlcloud.co.uk:9200/$ELASTICENV-dba-sql-metrics-$date2/_doc/" -H 'Content-Type: application/json' --data "$JSON_PAYLOAD"
+        curl -sS -u $ELASTICUSERNAME:$ELASTICPASSWORD -X POST "https://hb.elastic.$ELASTICENV.cdlcloud.co.uk:9200/$ELASTICENV-dba-sql-metrics-$date2/_doc/" -H 'Content-Type: application/json' --data "$JSON_PAYLOAD"
         echo ""
     else
         # do nothing as no blackout has been found
