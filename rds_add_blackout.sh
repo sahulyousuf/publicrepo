@@ -1,23 +1,4 @@
 #!/bin/bash
-#==============================================================================
-# FILE: rds_add_blackout.sh
-#
-# USAGE: rds_add_blackout.sh $AWSPROFILE $DBINSTANCE
-#
-# DESCRIPTION: Script to add a blackout by addng a tag to the RDS instance
-#              which will stop lambda functions erroring
-#
-# AUTHOR: Jade Buckingham
-#
-# CREATED: 11/11/2020
-#
-# VERSION: 1.0
-#
-# AMENDMENT LOG:
-# DATE BY DETAILS
-# ----------- ---------------- ------------------------------------------------
-# 11/11/2020  Jade Buckingham  Initial script
-#==============================================================================
 
 export AWSPROFILE=$1
 export DBINSTANCE=$2

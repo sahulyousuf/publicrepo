@@ -1,24 +1,4 @@
 #!/bin/bash
-#==================================================================================================
-# FILE: rds_list_blackouts.sh
-#
-# USAGE: rds_list_blackouts.sh $ELASTICUSERNAME $ELASTICPASSWORD $AWSPROFILE
-#
-# DESCRIPTION: Script to list all instances with a tag called Monitoring that has a value of nomon
-#              Results are sent to daily checks dashboard
-#
-# AUTHOR: Jade Buckingham
-#
-# CREATED: 11/11/2020
-#
-# VERSION: 1.1
-#
-# AMENDMENT LOG:
-# DATE BY DETAILS
-# ----------- ---------------- --------------------------------------------------------------------
-# 11/11/2020  Jade Buckingham  Initial script
-# 05/01/2021  Jade Buckingham  Added check for blackout variable
-#==================================================================================================
 
 export SSM_PROFILE=$1 # services-prod or services-non-prod
 export AWSPROFILE=$2

@@ -1,23 +1,4 @@
 #!/bin/bash
-#=====================================================================================
-# FILE: rds_remove_blackout.sh
-#
-# USAGE: rds_remove_blackout.sh $AWSPROFILE $DBINSTANCE
-#
-# DESCRIPTION: Script to remove a blackout by removing a tag from the RDS instance
-#              which will allow lambda functions to query the instance
-#
-# AUTHOR: Jade Buckingham
-#
-# CREATED: 11/11/2020
-#
-# VERSION: 1.0
-#
-# AMENDMENT LOG:
-# DATE BY DETAILS
-# ----------- ---------------- -------------------------------------------------------
-# 11/11/2020  Jade Buckingham  Initial script
-#=====================================================================================
 
 export AWSPROFILE=$1
 export DBINSTANCE=$2
